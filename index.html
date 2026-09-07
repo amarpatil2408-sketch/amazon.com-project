@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cart</title>
 </head>
+
 <body>
-    
+
+    <button onclick="
+        console.log(`Total items are ${cartQuantity}`);
+    ">
+        Show Cart
+    </button>
+
+    <button onclick="
+        cartQuantity = cartQuantity + 1;
+        console.log(`Total items are ${cartQuantity}`);
+    ">
+        Add to Cart
+    </button>
+
+    <button onclick="
+        cartQuantity = cartQuantity + 2;
+        console.log(`Total items are ${cartQuantity}`);
+    ">
+        +2
+    </button>
+
+    <button onclick="
+        cartQuantity = cartQuantity + 3;
+        console.log(`Total items are ${cartQuantity}`);
+    ">
+        +3
+    </button>
+
+    <button onclick="
+        cartQuantity = 0;
+        console.log(`Total items are ${cartQuantity}`);
+        console.log(`Cart is reset`);
+    ">
+        Clear Cart
+    </button>
+
+    <script>
+        let cartQuantity = 0;
+    </script>
+
 </body>
 </html>
